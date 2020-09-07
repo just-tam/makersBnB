@@ -28,8 +28,20 @@ I should be able to see a list of spaces
 
 ```
 As a nomad
+So that I can plan my life
+I want to know if my request has been accepted or denied
+```
+
+```
+As a nomad
 So that I can arrange a space
-I want to be able tto request a space
+I want to be able to request a space
+```
+
+```
+As a nomad
+So that I can specify a time frame
+I should be able to see the available dates
 ```
 
 HOSTS
@@ -52,4 +64,8 @@ So that I can control who books
 I want to be able to accept or reject requests
 ```
 
-
+```
+As a host
+So that I can host when I'm free
+I want to be able to specify the dates when my space is available
+```
