@@ -28,8 +28,8 @@ I should be able to see a list of spaces
 
 ```
 As a nomad
-So that I can plan my life
-I want to know if my request has been accepted or denied
+So that I can specify a time frame
+I should be able to see the available dates
 ```
 
 ```
@@ -40,8 +40,8 @@ I want to be able to request a space
 
 ```
 As a nomad
-So that I can specify a time frame
-I should be able to see the available dates
+So that I can plan my life
+I want to know if my request has been accepted or denied
 ```
 
 HOSTS
@@ -49,8 +49,22 @@ HOSTS
 ```
 As a host
 So that I can promote my place
-I should be able to list a place
+I should be able to list a name of a place
 ```
+
+```
+
+As a host
+So that nomads know about my space
+I want to be able to provide a short description of my space
+```
+
+```
+As a host
+So that nomads can budget
+I want to be able to provide the spaces price per night
+```
+
 
 ```
 As a host
