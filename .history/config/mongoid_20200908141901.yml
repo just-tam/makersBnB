@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      uri: mongodb+srv://Nomads:nomads4life@Cluster0.x9n0g.mongodb.net/sample_airbnb?retryWrites=true&w=majority
+      options:
+        server_selection_timeout: 5

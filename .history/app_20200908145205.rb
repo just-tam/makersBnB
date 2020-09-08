@@ -2,7 +2,6 @@ require 'sinatra/base'
 require 'mongoid'
 Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml'))
 
-=begin
 configure do
   Mongoid.configure do |config|
     config.sessions = { 
@@ -12,7 +11,7 @@ configure do
     }
   end
 end
-=end
+
 class Post
   include Mongoid::Document
 
