@@ -2,6 +2,17 @@ require 'sinatra/base'
 require 'mongoid'
 Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml'))
 
+=begin
+configure do
+  Mongoid.configure do |config|
+    config.sessions = { 
+      default => {
+        :hosts => ["localhost:27017"], :database => "makers_bnb"
+      }
+    }
+  end
+end
+=end
 class Post
   include Mongoid::Document
 
