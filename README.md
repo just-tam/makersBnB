@@ -31,7 +31,6 @@ As a nomad
 So that I can specify a time frame
 I should be able to see the available dates
 ```
-
 ```
 As a nomad
 So that I can arrange a space
