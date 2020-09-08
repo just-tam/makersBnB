@@ -1,7 +1,19 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/student/Projects/makersBnB/spec/features/viewing_spaces_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      }
     },
-    "timestamp": 1599562395
+    "timestamp": 1599572293
   }
 }
