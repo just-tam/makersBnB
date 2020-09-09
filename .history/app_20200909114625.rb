@@ -6,11 +6,7 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/viewspaces' do
-    @spaces = [ 
-      { 
-        :name => 'Team Nomad House' 
-      } 
-    ]
+    @spaces = [ { :name => 'Team Nomad House' } ]
     erb :spaces
   end
 
