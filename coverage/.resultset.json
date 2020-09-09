@@ -1,17 +1,17 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/viewing_spaces_spec.rb": {
+      "/Users/student/Projects/makersBnB/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           null,
           null,
-          1,
+          null,
           1,
           null,
           1,
           1,
           null,
-          1,
+          null,
           null,
           0,
           null,
@@ -22,21 +22,17 @@
           null
         ]
       },
-      "/Users/student/Projects/JS-Challenges/makersBnB/lib/space.rb": {
+      "/Users/student/Projects/makersBnB/lib/space.rb": {
         "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
           null
+        ]
+      },
+      "/Users/student/Projects/makersBnB/spec/space_spec.rb": {
+        "lines": [
+
         ]
       }
     },
-    "timestamp": 1599646084
+    "timestamp": 1599650136
   }
 }
