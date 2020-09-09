@@ -7,11 +7,9 @@ class MakersBnb < Sinatra::Base
 
   get '/viewspaces' do
     @spaces = [ 
-      { 
-        :name => 'Team Nomad House',
-        :description => 'It is a lovely place to stay',
-        :price => '£500' 
-      } 
+      { :name => 'Team Nomad House'},
+      { :description => 'It is a lovely place to stay'},
+      { :price => '£500' }    
     ]
     erb :spaces
   end

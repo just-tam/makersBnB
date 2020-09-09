@@ -10,7 +10,11 @@
   <h1>MakersBnB</h1>
   <ul>
     <% @spaces.each do |space| %>
-      <li><%= space %></li>
+      <li>
+      <%= space[:name] %>
+      <%= space[:description] %>
+      <%= space[:price] %>
+      </li>
       <% end %>
     </ul>
 
