@@ -1,45 +1,40 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/viewing_spaces_spec.rb": {
+      "/Users/student/Projects/makersBnB/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           null,
           null,
           null,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
           null,
-          0,
+          1,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null
         ]
       },
-      "/Users/student/Projects/JS-Challenges/makersBnB/lib/space.rb": {
-        "lines": [
-
-        ]
-      },
-      "/Users/student/Projects/JS-Challenges/makersBnB/spec/space_spec.rb": {
+      "/Users/student/Projects/makersBnB/spec/space_spec.rb": {
         "lines": [
           1,
           null,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -49,6 +44,10 @@
         ]
       }
     },
+<<<<<<< HEAD
     "timestamp": 1599651092
+=======
+    "timestamp": 1599651909
+>>>>>>> d9e114f9cc9cec2821178a7888c401cd1222966e
   }
 }

@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_relative './lib/space.rb'
 
 class MakersBnb < Sinatra::Base
   get '/' do
@@ -6,11 +7,8 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/viewspaces' do
-    @spaces = [ 
-      { :name => 'Team Nomad House'},
-      { :description => 'It is a lovely place to stay'},
-      { :price => '£500' }    
-    ]
+    @space = Space.all
+  
     erb :spaces
   end
 
