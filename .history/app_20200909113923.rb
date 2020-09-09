@@ -7,8 +7,8 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/viewspaces' do
-    spaces = [ "name => 'Team Nomad House'" ]
-    erb :spaces
+    @spaces = [ "name => 'Team Nomad House'" ]
+    erb :index
   end
 
 
