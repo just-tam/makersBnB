@@ -9,11 +9,11 @@ class Space
       { :price => '£500' }    
     ]
     all = @spaces
-    all.each { |space|
+    all.each |space| do
       space[:name],
       space[:description],
       space[:price]
-    }
+    end
 
   end  
 

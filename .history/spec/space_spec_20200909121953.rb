@@ -1,4 +1,4 @@
-require './lib/space.rb'
+require 'space'
 
 describe Space do
 

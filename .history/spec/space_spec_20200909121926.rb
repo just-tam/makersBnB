@@ -1,4 +1,4 @@
-require './lib/space.rb'
+require 'space'
 
 describe Space do
 
@@ -9,7 +9,8 @@ describe Space do
       expect(Space.all).to include('Team Nomad House')
       expect(Space.all).to include('It is a lovely place to stay')
       expect(Space.all).to include('£500')
-    end  
+    end
+    
   end
   
 

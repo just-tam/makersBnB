@@ -5,13 +5,13 @@
         "lines": [
           null,
           null,
-          1,
-          1,
           null,
           1,
-          1,
           null,
-          1,
+          0,
+          0,
+          null,
+          null,
           null,
           0,
           null,
@@ -24,11 +24,23 @@
       },
       "/Users/student/Projects/JS-Challenges/makersBnB/lib/space.rb": {
         "lines": [
+
+        ]
+      },
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/space_spec.rb": {
+        "lines": [
           1,
           null,
           1,
           null,
-          1,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
           null,
           null,
           null,
@@ -37,6 +49,6 @@
         ]
       }
     },
-    "timestamp": 1599646084
+    "timestamp": 1599651047
   }
 }

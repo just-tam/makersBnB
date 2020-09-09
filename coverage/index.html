@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-09-09T11:08:04+01:00">2020-09-09T11:08:04+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-09-09T12:30:47+01:00">2020-09-09T12:30:47+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  66.67%
+  21.43%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.67
+         0.21
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>2</b> files in total.
+    <b>3</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>12</b> relevant lines,
-    <span class="green"><b>8</b> lines covered</span> and
-    <span class="red"><b>4</b> lines missed. </span>
+    <b>14</b> relevant lines,
+    <span class="green"><b>3</b> lines covered</span> and
+    <span class="red"><b>11</b> lines missed. </span>
     (<span class="red">
-  66.67%
+  21.43%
 </span>
 )
   </div>
@@ -73,22 +73,33 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#7e28267b5921a2a0fe1ac805b9ccad67e20b56f2" class="src_link" title="lib/space.rb">lib/space.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">3</td>
-            <td class="cell--number">3</td>
+            <td class="cell--number">21</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">0.00</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#877adc33f712ae6d9941010c27c3cddf6d4ea8da" class="src_link" title="spec/features/viewing_spaces_spec.rb">spec/features/viewing_spaces_spec.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">55.56 %</td>
+            <td class="red strong cell--number t-file__coverage">14.29 %</td>
             <td class="cell--number">17</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0.14</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#d4869391740dd59360b14cb87a028fb240c1b453" class="src_link" title="spec/space_spec.rb">spec/space_spec.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">28.57 %</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">2</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">0.56</td>
+            <td class="cell--number">0.29</td>
             
           </tr>
         
@@ -123,8 +134,8 @@
     
 
     <div class="t-line-summary">
-      <b>3</b> relevant lines.
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>0</b> relevant lines.
+      <span class="green"><b>0</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -136,13 +147,13 @@
     <ol>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="1">
+            
             
 
             
 
-            <code class="ruby">require &#39;mongoid&#39;</code>
+            <code class="ruby"># require &#39;mongoid&#39;</code>
           </li>
         </div>
       
@@ -158,8 +169,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="3">
+            
             
 
             
@@ -180,8 +191,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="5">
+            
             
 
             
@@ -197,7 +208,7 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">    @spaces = [ </code>
           </li>
         </div>
       
@@ -208,7 +219,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      { :name =&gt; &#39;Team Nomad House&#39;},</code>
           </li>
         </div>
       
@@ -219,7 +230,7 @@
 
             
 
-            <code class="ruby">  end  </code>
+            <code class="ruby">      { :description =&gt; &#39;It is a lovely place to stay&#39;},</code>
           </li>
         </div>
       
@@ -230,12 +241,133 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      { :price =&gt; &#39;£500&#39; }    </code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">    ]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    all = @spaces</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    all.each { |space|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">      space[:name],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">      space[:description],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">      space[:price]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
@@ -255,7 +387,7 @@
     <h3>spec/features/viewing_spaces_spec.rb</h3>
     <h4>
       <span class="red">
-  55.56%
+  14.29%
 </span>
 
       lines covered
@@ -264,9 +396,9 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <b>7</b> relevant lines.
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
 
     
@@ -299,13 +431,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="3">
+            
             
 
             
 
-            <code class="ruby">require &#39;mongoid&#39;</code>
+            <code class="ruby"># require &#39;mongoid&#39;</code>
           </li>
         </div>
       
@@ -332,8 +464,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
             
 
             
@@ -343,8 +475,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
             
 
             
@@ -365,13 +497,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="9">
+            
             
 
             
 
-            <code class="ruby">    Space.create(name: &#39;Team Nomad House&#39;, description: &#39;It is a lovely place to stay&#39;, price: &#39;£500&#39;)</code>
+            <code class="ruby">    # Space.create(name: &#39;Team Nomad House&#39;, description: &#39;It is a lovely place to stay&#39;, price: &#39;£500&#39;)</code>
           </li>
         </div>
       
@@ -393,7 +525,7 @@
 
             
 
-            <code class="ruby">    visit (&#39;/&#39;)</code>
+            <code class="ruby">    visit (&#39;/viewspaces&#39;)</code>
           </li>
         </div>
       
@@ -437,7 +569,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content(&#39;£500 per night&#39;)</code>
+            <code class="ruby">    expect(page).to have_content(&#39;£500&#39;)</code>
           </li>
         </div>
       
@@ -449,6 +581,224 @@
             
 
             <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="d4869391740dd59360b14cb87a028fb240c1b453">
+  <div class="header">
+    <h3>spec/space_spec.rb</h3>
+    <h4>
+      <span class="red">
+  28.57%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;./lib/space.rb&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">describe Space do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">  describe &#39;.all&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">    it &#39;displays a list of spaces&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">      #Space.create(name: &#39;Team Nomad House&#39;, description: &#39;It is a lovely place to stay&#39;, price: &#39;£500&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">      expect(Space.all).to include(&#39;Team Nomad House&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">      expect(Space.all).to include(&#39;It is a lovely place to stay&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">      expect(Space.all).to include(&#39;£500&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">    end  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
