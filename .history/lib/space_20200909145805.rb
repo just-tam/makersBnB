@@ -20,7 +20,7 @@ class Space
   end  
 
   def self.create
-    Space.new
+    Space.new(name: , description: , price: )
   end
   
 end

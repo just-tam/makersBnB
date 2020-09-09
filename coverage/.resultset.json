@@ -1,6 +1,18 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/homepage_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           null,
@@ -56,6 +68,6 @@
         ]
       }
     },
-    "timestamp": 1599653329
+    "timestamp": 1599659946
   }
 }

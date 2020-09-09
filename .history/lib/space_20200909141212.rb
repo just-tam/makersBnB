@@ -2,13 +2,6 @@
 
 class Space
 
-  attr_reader :id, :title, :url
-
-  def initialize(name:, description:, price:)
-		@name = name
-		@description = description
-		@price = price
-	end
 
   def self.all
     @spaces = [ 
@@ -20,7 +13,8 @@ class Space
   end  
 
   def self.create
-    Space.new
-  end
+    Space.new(name: result[0]['name'], description: result[0]['description'], price: result[0]['price'])
+  end  
+
   
-end
+end  
