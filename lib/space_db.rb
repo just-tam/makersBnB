@@ -9,17 +9,17 @@ class Space
 
   belongs_to :user
 
-  attr_reader :name, :description
+  # attr_reader :name, :description
 
-  def initialize(name:, description:)
-    @name = name
-    @description = description
-    # @price = price
-    # @start_date = start_date
-    # @end_date = end_date
-  end
+  # def initialize(name:, description:)
+  #   @name = name
+  #   @description = description
+  #   # @price = price
+  #   # @start_date = start_date
+  #   # @end_date = end_date
+  # end
 
-  def self.viewspaces
+  def self.viewspaces()
     spaces = Space.all.to_json
     json = JSON.parse(spaces)
     #puts json[0]['price']
@@ -27,7 +27,7 @@ class Space
       (
         # description: k['description']
         arr.each do |k, v|
-          puts v
+          puts "#{k}: #{v}"
         end
       )
     end
