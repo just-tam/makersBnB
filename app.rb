@@ -15,8 +15,15 @@ class MakersBnb < Sinatra::Base
     erb :spaces
   end
 
-  post '/spaces/new' do
-    Space.create(params[:name], params[:description], params[:price], params[:start_date], params[:end_date])
+  get '/spaces/new' do
+    erb :spaces_new
+  end
+    
+  post '/spaces' do
+    p "I am hre"
+    p params[:name]
+    p params[:description]
+    Space.create(name: params[:name], description: params[:description], price: params[:price], start_date: params[:start_date], end_date: params[:end_date])
     redirect('/spaces')
   end
 

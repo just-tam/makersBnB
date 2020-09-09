@@ -14,7 +14,7 @@ describe Space do
   
   describe '.create' do
     it 'adds a new space' do
-      space = Space.create(name: 'Team Nomad House', description: 'It is a lovely place to stay', price: '£500')
+      space = Space.create(name: 'Team Nomad House', description: 'It is a lovely place to stay', price: '£500', start_date: '12/09/20', end_date: '14/09/20')
 
       expect(space).to be_a Space
       expect(space.name).to eq('Team Nomad House')

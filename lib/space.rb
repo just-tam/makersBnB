@@ -21,8 +21,8 @@ class Space
 
   end  
 
-  def self.create
-    #Space.new(name:, description:, price:, start_date:, end_date:)
+  def self.create(name:, description:, price:, start_date:, end_date:)
+    
   end
   
 end
