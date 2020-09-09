@@ -18,9 +18,5 @@ class Space
 
   end  
 
-  def self.create
-    
-  end  
-
   
 end  
