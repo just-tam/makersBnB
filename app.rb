@@ -23,6 +23,7 @@ end
 class MakersBnb < Sinatra::Base
   #get '/' do
   #  'MakersBnB!'
+  #
   #end
 
   get '/posts' do
