@@ -3,6 +3,7 @@ require 'mongoid'
 require './lib/post.rb'
 require './lib/comment.rb'
 require './lib/user_db.rb'
+require 'json'
 Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml'))
 
 class MakersBnb < Sinatra::Base
@@ -14,12 +15,12 @@ class MakersBnb < Sinatra::Base
   get '/posts' do
     Post.all.to_json
   end
-  
+
   post '/posts' do
     post = Post.create!(params[:post])
     post.to_json
   end
-  
+
   get '/posts/:post_id' do |post_id|
     post = Post.find(post_id)
     post.attributes.merge(
@@ -29,13 +30,20 @@ class MakersBnb < Sinatra::Base
 
   get '/users' do
     users = User.all.to_json
-    users[0][0]
+    rescue JSON::ParserError
+    test =  JSON.parse(users)
+    test[0]
   end
 
+  #get '/users/new' do
+  #  User.create_user
+  #  redirect('/users')
+  #end
 
 
 
-  
+
+
   # post '/posts/:post_id/comments' do |post_id|
   #   post = Post.find(post_id)
   #   comment = post.comments.create!(params[:comment])

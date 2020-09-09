@@ -5,8 +5,8 @@ class User
   field :email, type: String
   field :password, type: String
 
-end
+  def self.create_user
+    User.create(username:'nomad3', email:'nomad3@email.com', password:'octopus12?')
+  end
 
-def create_user
-  User.create(username:'nomad3', email:'nomad3@email.com', password:'octopus12?')
 end
