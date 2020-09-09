@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'mongoid'
-require './lib/space.rb'
 
 feature 'viewing spaces' do
   scenario 'it has a list of spaces' do
