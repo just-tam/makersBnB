@@ -1,24 +1,9 @@
 require 'sinatra/base'
 require 'mongoid'
+require './lib/post.rb'
+require './lib/comment.rb'
+require './lib/user_db.rb'
 Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml'))
-
-class Post
-  include Mongoid::Document
-
-  field :title, type: String
-  field :body, type: String
-
-  has_many :comments
-end
-
-class Comment
-  include Mongoid::Document
-
-  field :name, type: String
-  field :message, type: String
-
-  belongs_to :post
-end
 
 class MakersBnb < Sinatra::Base
   #get '/' do
@@ -41,11 +26,20 @@ class MakersBnb < Sinatra::Base
       comments: post.comments,
     ).to_json
   end
-  
-  post '/posts/:post_id/comments' do |post_id|
-    post = Post.find(post_id)
-    comment = post.comments.create!(params[:comment])
-    {}.to_json
+
+  get '/users' do
+    users = User.all.to_json
+    users[0][0]
   end
+
+
+
+
+  
+  # post '/posts/:post_id/comments' do |post_id|
+  #   post = Post.find(post_id)
+  #   comment = post.comments.create!(params[:comment])
+  #   {}.to_json
+  # end
   run! if app_file == $0
 end
