@@ -11,6 +11,31 @@
           null
         ]
       },
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/space_new_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           null,
@@ -66,6 +91,6 @@
         ]
       }
     },
-    "timestamp": 1599661409
+    "timestamp": 1599666027
   }
 }

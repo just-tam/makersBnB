@@ -2,14 +2,12 @@
 
 class Space
 
-  attr_reader :name, :description, :price, :start_date, :end_date
+  attr_reader :name, :description, :price
 
   def initialize(name:, description:, price:, start_date:, end_date:)
     @name = name
     @description = description
     @price = price
-    @start_date = start_date
-    @end_date = end_date
   end
 
   def self.all
@@ -22,7 +20,7 @@ class Space
   end  
 
   def self.create
-    #Space.new(name:, description:, price:, start_date:, end_date:)
+    Space.new(name:, description:, price:, start_date:, end_date:)
   end
   
 end
