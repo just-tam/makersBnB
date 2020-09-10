@@ -37,11 +37,14 @@ class Space
     collection.insert_one(doc)
   end
 
-  def self.request
+  def self.request(name)
     client = Mongo::Client.new("mongodb+srv://Michael:nomads4life@cluster0.x9n0g.mongodb.net/makers_bnb?retr
       Writes=true&w=majority")
       collection = client[:spaces]
-      collection.find(:available => true).find_one_and_replace(:available => false)
+      collection.update_one(
+        { name: name },
+        { "$set": { 'available': false } }
+      )
     end
 
 end

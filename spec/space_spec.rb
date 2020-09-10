@@ -23,9 +23,6 @@ describe Space do
       expect(space.description).to eq('It is a lovely place to stay')
       expect(space.price).to eq('£500')
       expect(space.available_date).to eq('12/09/20')
-
-
-
     end
   end
 
@@ -35,7 +32,7 @@ describe Space do
       space = Space.viewspaces.last
       expect(space.available).to eq(true)
 
-      Space.request
+      Space.request('Team Nomad House')
 
       expect(space.available).to eq(false)
     
