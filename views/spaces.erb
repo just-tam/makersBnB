@@ -13,9 +13,8 @@
     <% @space.each do |space| %>
       <li> Name : <%= space.name %> </li>
       <li> Description: <%= space.description %> </li>
-      <li>Price: <%= space.price %> </li>
-      <li>Available from: <%= space.start_date %> </li>
-      <li>Available to: <%= space.end_date %> </li>
+      <li> Price: <%= space.price %> </li>
+      <li> Date Available: <%= space.available_date %> </li>
       <% end %>
     </ul>
 
