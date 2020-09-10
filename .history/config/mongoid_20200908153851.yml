@@ -1,6 +1,0 @@
-development:
-  clients:
-    default:
-      uri: mongo+srv://makersnomads@gmail.com:nomads4life@cluster0.mongodb.net/makers_bnb?retryWrites=true&w=majority
-      options:
-        server_selection_timeout: 5
