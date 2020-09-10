@@ -27,6 +27,11 @@ class MakersBnb < Sinatra::Base
     redirect('/spaces')
   end
 
+  post '/spaces/:name' do
+    Space.request(params[:name])
+    erb :request
+  end
+
 
   # post '/posts' do
   #   post = Post.create!(params[:post])

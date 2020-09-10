@@ -13,5 +13,6 @@ feature 'viewing spaces' do
     expect(page).to have_content('Team Nomad House')
     expect(page).to have_content('It is a lovely place to stay')
     expect(page).to have_content('£500')
+    expect(page).to have_content('12/09/20')
   end
 end
