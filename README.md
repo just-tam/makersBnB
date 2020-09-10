@@ -1,6 +1,10 @@
-# Makers BnB
+# Nomads BnB
 
 A web application that allows users to list spaces they have available, and to hire spaces for the night.
+
+![Image 1](https://github.com/just-tam/makersBnB/blob/master/Nomads_logo.png?raw=true)
+
+
 
 ## User Stories
 

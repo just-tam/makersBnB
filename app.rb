@@ -1,4 +1,5 @@
 require 'sinatra/base'
+<<<<<<< HEAD
 require 'mongoid'
 require './lib/post.rb'
 require './lib/comment.rb'
@@ -12,11 +13,19 @@ class MakersBnb < Sinatra::Base
   #  'MakersBnB!'
   #
   #end
+=======
+require_relative './lib/space.rb'
 
-  get '/posts' do
-    Post.all.to_json
+class MakersBnb < Sinatra::Base
+>>>>>>> 5b9832b5c9e0e07e5e1c926fbcebe8d53948d761
+
+  enable :sessions
+
+  get '/' do
+    erb :index
   end
 
+<<<<<<< HEAD
   post '/posts' do
     post = Post.create!(params[:post])
     post.to_json
@@ -62,5 +71,26 @@ class MakersBnb < Sinatra::Base
   #   comment = post.comments.create!(params[:comment])
   #   {}.to_json
   # end
+=======
+  get '/spaces' do
+    @space = Space.all
+  
+    erb :spaces
+  end
+
+  get '/spaces/new' do
+    erb :spaces_new
+  end
+    
+  post '/spaces' do
+    p "I am hre"
+    p params[:name]
+    p params[:description]
+    Space.create(name: params[:name], description: params[:description], price: params[:price], start_date: params[:start_date], end_date: params[:end_date])
+    redirect('/spaces')
+  end
+
+
+>>>>>>> 5b9832b5c9e0e07e5e1c926fbcebe8d53948d761
   run! if app_file == $0
 end
