@@ -1,36 +1,33 @@
 class Space
-  include Mongoid::Document
+  #include Mongoid::Document
 
-  field :name, type: String
-  field :description, type: String
-  field :price, type: Integer
-  field :start_date, type: String
-  field :end_date, type: String
+  #field :name, type: String
+  #field :description, type: String
+  #field :price, type: Integer
+  #field :start_date, type: String
+  #field :end_date, type: String
 
-  belongs_to :user
+  #belongs_to :user
 
-  attr_reader :name, :description
+  attr_reader :name, :description, :price, :start_date, :end_date
 
-  def initialize(name:, description:)
+  def initialize(name: ,description:,price:, start_date:, end_date:)
     @name = name
     @description = description
-    # @price = price
-    # @start_date = start_date
-    # @end_date = end_date
+    @price = price
+    @start_date = start_date
+    @end_date = end_date
   end
 
   def self.viewspaces
-    spaces = Space.all.to_json
-    json = JSON.parse(spaces)
-    #puts json[0]['price']
-    json.each do |arr|
-      (
-        # description: k['description']
-        arr.each do |k, v|
-          puts v
-        end
-      )
-    end
+    client = Mongo::Client.new("mongodb+srv://Michael:nomads4life@cluster0.x9n0g.mongodb.net/makers_bnb?retr
+  Writes=true&w=majority")
+    data  = client.database[:spaces]
+    spaces = []
+    data.find.each { |item| spaces << JSON.parse(item.to_json) }
+    spaces.map { |space|
+      Space.new(name: space["name"], description: space["description"], price: space["price"], start_date: space["start_date"], end_date: space["end_date"])
+      }
   end
 
   # def self.create_space
