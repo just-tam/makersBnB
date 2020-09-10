@@ -9,13 +9,13 @@
 <body>
   <h1>Nomads</h1>
   <ul>
-  
+
     <% @space.each do |space| %>
-      <li>
-      <%= space[:name] %>
-      <%= space[:description] %>
-      <%= space[:price] %>
-      </li>
+      <li> Name : <%= space.name %> </li>
+      <li> Description: <%= space.description %> </li>
+      <li>Price: <%= space.price %> </li>
+      <li>Available from: <%= space.start_date %> </li>
+      <li>Available to: <%= space.end_date %> </li>
       <% end %>
     </ul>
 
