@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Desktop/MAKERS/Week6/makersBnB/spec/features/homepage_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -11,7 +11,7 @@
           null
         ]
       },
-      "/Users/student/Desktop/MAKERS/Week6/makersBnB/spec/features/request_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/request_spec.rb": {
         "lines": [
           null,
           null,
@@ -31,7 +31,7 @@
           null
         ]
       },
-      "/Users/student/Desktop/MAKERS/Week6/makersBnB/spec/features/space_new_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/space_new_spec.rb": {
         "lines": [
           1,
           1,
@@ -54,7 +54,7 @@
           null
         ]
       },
-      "/Users/student/Desktop/MAKERS/Week6/makersBnB/spec/features/viewing_spaces_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/viewing_spaces_spec.rb": {
         "lines": [
           null,
           null,
@@ -76,7 +76,7 @@
           null
         ]
       },
-      "/Users/student/Desktop/MAKERS/Week6/makersBnB/spec/space_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/space_spec.rb": {
         "lines": [
           1,
           null,
@@ -125,6 +125,6 @@
         ]
       }
     },
-    "timestamp": 1599753692
+    "timestamp": 1599754897
   }
 }
