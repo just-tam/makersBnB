@@ -44,7 +44,7 @@ class User
       end
     end  
       #user_data.find( { "_id": ObjectId("#{id}") } )
-      #User.new(id:["_id"]["$oid"], username:["username"])
+      #User.new(id:["_id"]["$oid"], username:["username"]
   end
 
   # def self.find(username)
