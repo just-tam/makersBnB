@@ -15,9 +15,9 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/spaces' do
-    @user = User.find(session[:username])
+    @user = User.find(session[:user_id])
     @viewusers = User.viewusers
-    @viewuser = Single.viewuser 
+    @viewuser = Single.viewuser
     @space = Space.viewspaces
     erb :spaces
   end
@@ -36,9 +36,8 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/users' do
-    
+
     user = User.create(username: params[:username], email: params[:email], password: params[:password])
-    
     session[:user_id] = user.id
     redirect('/spaces')
   end

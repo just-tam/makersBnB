@@ -18,8 +18,9 @@ class User
         email: email,
         password: password
       }
-      collection.insert_one(doc)
-    # id = collection.find({ _id: { $type: "objectId" } })
+      result = collection.insert_one(doc)
+      oid = JSON.parse(result.inserted_id.to_json)
+      User.new(id: oid["$oid"], username: username)
   end
 
   def self.viewusers
@@ -31,17 +32,15 @@ class User
     users.map { |user|
       User.new(id: user["_id"]["$oid"], username: user["username"])
       }
-      
+    end
   end
 
-  def self.find(id)
-      users_data = User.viewusers
-
-      users_data.each do |user| if(user.id == id )
-        return user
-      end
-      end
-
+  def self.find_user(id)
+    users_data = User.viewusers
+    users_data.each do |user| if(user.id == id )
+      p user
+      return user
+    end
       #user_data.find( { "_id": ObjectId("#{id}") } )
       #User.new(id:["_id"]["$oid"], username:["username"])
   end
