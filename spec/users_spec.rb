@@ -4,7 +4,5 @@ describe 'create' do
 
     expect(user).to be_a User
     expect(user.username).to eq 'testuser'
-    expect(user.email).to eq 'test@email.com'
-    expect(user.password).to eq 'password123'
   end
 end
