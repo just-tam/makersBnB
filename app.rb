@@ -14,8 +14,6 @@ class MakersBnb < Sinatra::Base
 
   get '/spaces' do
     @user = User.find_user(session[:user_id])
-    p "YOU ARE HEREE  --------------------------------------------------"
-    p "SESSION"
     session[:user_id]
     @viewusers = User.viewusers
     @space = Space.viewspaces
