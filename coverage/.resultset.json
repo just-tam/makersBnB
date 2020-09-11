@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/tamara/JS_Projects/MakersBnB/spec/features/homepage_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -11,7 +11,7 @@
           null
         ]
       },
-      "/Users/tamara/JS_Projects/MakersBnB/spec/features/space_new_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/space_new_spec.rb": {
         "lines": [
           1,
           1,
@@ -36,7 +36,7 @@
           null
         ]
       },
-      "/Users/tamara/JS_Projects/MakersBnB/spec/features/user_registration_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/user_registration_spec.rb": {
         "lines": [
           1,
           1,
@@ -46,33 +46,33 @@
           1,
           1,
           null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/viewing_spaces_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          0,
+          0,
           0,
           null,
           null
         ]
       },
-      "/Users/tamara/JS_Projects/MakersBnB/spec/features/viewing_spaces_spec.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/tamara/JS_Projects/MakersBnB/spec/space_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/space_spec.rb": {
         "lines": [
           1,
           null,
@@ -105,21 +105,21 @@
           null
         ]
       },
-      "/Users/tamara/JS_Projects/MakersBnB/spec/users_spec.rb": {
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/users_spec.rb": {
         "lines": [
           1,
           1,
           1,
           null,
           1,
-          0,
-          0,
+          1,
+          1,
           0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1599766902
+    "timestamp": 1599823429
   }
 }

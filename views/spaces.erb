@@ -8,7 +8,11 @@
 
 <body>
   <h1>Nomads</h1>
+      <% if @user %>
       <h1>Welcome, <%= @user.username %></h1>
+      <% else %>
+      <h1> Welcome! </h1>
+      <% end %>
     <ul>
     <% @space.each do |space| %>
       <li> Name : <%= space.name %> </li>

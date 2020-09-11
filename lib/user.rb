@@ -25,22 +25,24 @@ class User
 
   def self.viewusers
     client = Mongo::Client.new("mongodb+srv://Michael:nomads4life@cluster0.x9n0g.mongodb.net/makers_bnb?retr
-  Writes=true&w=majority")
+    Writes=true&w=majority")
     data  = client.database[:users]
     users = []
     data.find.each { |item| users << JSON.parse(item.to_json) }
-    users.map { |user|
+    users.map do |user|
       User.new(id: user["_id"]["$oid"], username: user["username"])
-      }
-    end
+    end  
   end
 
   def self.find_user(id)
     users_data = User.viewusers
-    users_data.each do |user| if(user.id == id )
-      p user
-      return user
-    end
+    users_data.each do |user| 
+      if (user.id == id )
+        return user
+      else
+        return nil
+      end
+    end  
       #user_data.find( { "_id": ObjectId("#{id}") } )
       #User.new(id:["_id"]["$oid"], username:["username"])
   end
