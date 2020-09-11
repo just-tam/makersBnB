@@ -26,17 +26,17 @@ describe Space do
     end
   end
 
-  describe '.request' do
-    it 'reserves space for confirmation' do
-      Space.create(name: 'Team Nomad House', description: 'It is a lovely place to stay', price: '£500', available_date: '12/09/20')
-      space = Space.viewspaces.last
-
-      expect(space.available).to eq(true)
-
-      Space.request('Team Nomad House')
-      space = Space.viewspaces.last
-
-      expect(space.available).to eq(false)
-    end
-  end
+  # describe '.request' do
+  #   it 'reserves space for confirmation' do
+  #     Space.create(name: 'Team Nomad House', description: 'It is a lovely place to stay', price: '£500', available_date: '12/09/20')
+  #     space = Space.viewspaces.last
+  #
+  #     expect(space.available).to eq(true)
+  #
+  #     Space.request('Team Nomad House')
+  #     space = Space.viewspaces.last
+  #
+  #     expect(space.available).to eq(false)
+  #   end
+  # end
 end
