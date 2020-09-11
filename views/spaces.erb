@@ -8,8 +8,9 @@
 
 <body>
   <h1>Nomads</h1>
-  <ul>
-
+      <h2>Welcome, <%= @viewuser[-1].username %></h2>
+      <h1>Welcome, <%= @user.username %></h1>
+    <ul>
     <% @space.each do |space| %>
       <li> Name : <%= space.name %> </li>
       <li> Description: <%= space.description %> </li>
@@ -18,6 +19,24 @@
       <li>Available to: <%= space.end_date %> </li>
       <% end %>
     </ul>
+
+     <h2><% @viewuser %></h2>
+
+    <ul>
+    <% @viewusers.each do |user| %>
+     <li> id : <%= user.id %> </li>
+      <li> Username : <%= user.username %> </li>
+    <% end %>
+    </ul>
+
+      <%# <ul> %>
+    <%# <% @viewuser.each do |user| %> %>
+      <%# <li> Username : <%= user.username %>  %>
+      <%# </li> %>
+    <%# <% end %> %>
+    <%# </ul> %>
+
+
 
 </body>
 

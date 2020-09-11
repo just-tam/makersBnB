@@ -1,8 +1,9 @@
 require 'sinatra/base'
 require 'mongoid'
-require './lib/user_db.rb'
+require './lib/user.rb'
 require './lib/space.rb'
 require 'json'
+require './lib/single_user.rb'
 #Mongoid.load!(File.join(File.dirname(__FILE__), 'config', 'mongoid.yml'))
 
 class MakersBnb < Sinatra::Base
@@ -14,6 +15,9 @@ class MakersBnb < Sinatra::Base
   end
 
   get '/spaces' do
+    @user = User.find(session[:username])
+    @viewusers = User.viewusers
+    @viewuser = Single.viewuser 
     @space = Space.viewspaces
     erb :spaces
   end
@@ -24,6 +28,18 @@ class MakersBnb < Sinatra::Base
 
   post '/spaces' do
     Space.create(name: params[:name], description: params[:description], price: params[:price], start_date: params[:start_date], end_date: params[:end_date])
+    redirect('/spaces')
+  end
+
+  get '/users/new' do
+    erb :"users_new"
+  end
+
+  post '/users' do
+    
+    user = User.create(username: params[:username], email: params[:email], password: params[:password])
+    
+    session[:user_id] = user.id
     redirect('/spaces')
   end
 

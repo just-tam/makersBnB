@@ -25,13 +25,28 @@
           1,
           1,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tamara/JS_Projects/MakersBnB/spec/features/user_registration_spec.rb": {
+        "lines": [
+          1,
+          1,
           1,
           1,
           1,
           1,
           1,
           null,
-          null,
+          0,
           null,
           null
         ]
@@ -50,9 +65,9 @@
           null,
           1,
           null,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -89,8 +104,22 @@
           null,
           null
         ]
+      },
+      "/Users/tamara/JS_Projects/MakersBnB/spec/users_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1599738117
+    "timestamp": 1599766902
   }
 }
