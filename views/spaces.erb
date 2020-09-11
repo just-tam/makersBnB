@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Spaces</title>
+  <title>Spaces</title>
 </head>
 
 <body>
@@ -15,13 +15,17 @@
       <% end %>
     <ul>
     <% @space.each do |space| %>
-      <li> Name : <%= space.name %> </li>
-      <li> Description: <%= space.description %> </li>
-      <li>Price: <%= space.price %> </li>
-      <li>Available from: <%= space.start_date %> </li>
-      <li>Available to: <%= space.end_date %> </li>
+      <% if space.available %>
+        <li> Name : <%= space.name %> </li>
+        <li> Description: <%= space.description %> </li>
+        <li> Price: <%= space.price %> </li>
+        <li> Date Available: <%= space.available_date %> </li>
+        <form action="/spaces/<%= space.name %>" method="post">
+          <input type="submit" id="<%space.name%>" value= "Request" />
+        </form>
       <% end %>
-    </ul>
+    <% end %>
+  </ul>
 
      <h2><% @viewuser %></h2>
 

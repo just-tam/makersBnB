@@ -11,6 +11,30 @@
           null
         ]
       },
+
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/space_new_spec.rb": {
+
+      "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/request_spec.rb": {
+
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/student/Projects/JS-Challenges/makersBnB/spec/features/space_new_spec.rb": {
         "lines": [
           1,
@@ -18,7 +42,6 @@
           null,
           1,
           null,
-          1,
           1,
           1,
           1,
@@ -45,6 +68,9 @@
           1,
           1,
           1,
+
+          null,
+
           null,
           1,
           null,
@@ -61,13 +87,20 @@
           1,
           1,
           null,
-          null,
+          1,
           null,
           1,
           null,
+
           0,
           0,
           0,
+
+          1,
+          1,
+          1,
+          1,
+
           null,
           null
         ]
@@ -80,8 +113,9 @@
           null,
           1,
           1,
-          null,
-          null,
+          1,
+          1,
+          1,
           1,
           0,
           0,
@@ -91,12 +125,26 @@
           1,
           1,
           1,
+          1,
           null,
           1,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -120,6 +168,10 @@
         ]
       }
     },
+
     "timestamp": 1599823429
+
+    "timestamp": 1599754897
+
   }
 }

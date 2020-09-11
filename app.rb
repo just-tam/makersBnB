@@ -26,16 +26,23 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/spaces' do
-    Space.create(name: params[:name], description: params[:description], price: params[:price], start_date: params[:start_date], end_date: params[:end_date])
+    Space.create(name: params[:name], description: params[:description], price: params[:price], available_date: params[:available_date])
     redirect('/spaces')
   end
+
 
   get '/users/new' do
     erb :"users_new"
   end
 
-  post '/users' do
+  
+  post '/spaces/:name' do
+    Space.request(params[:name])
+    erb :request
+  end
 
+
+  post '/users' do
     user = User.create(username: params[:username], email: params[:email], password: params[:password])
     session[:user_id] = user.id
     redirect('/spaces')
