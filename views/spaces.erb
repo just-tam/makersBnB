@@ -23,6 +23,14 @@
         <form action="/spaces/<%= space.name %>" method="post">
           <input type="submit" id="<%space.name%>" value= "Request" />
         </form>
+      <% else %>
+        <li> Name : <%= space.name %> </li>
+        <li> Description: <%= space.description %> </li>
+        <li> Price: <%= space.price %> </li>
+        <li> Date Available: <%= space.available_date %> </li>
+        <form action="/spaces/<%= space.name %>" method="post">
+          <input type="submit" id="<%space.name%>" style="color: #A9A9A9" value= "Request" />
+        </form>
       <% end %>
     <% end %>
   </ul>
