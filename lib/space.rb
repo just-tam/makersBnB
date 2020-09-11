@@ -15,7 +15,7 @@ class Space
   def self.viewspaces
     client = Mongo::Client.new("mongodb+srv://Michael:nomads4life@cluster0.x9n0g.mongodb.net/makers_bnb?retr
       Writes=true&w=majority")
-    data  = client.database[:spaces]
+    data = client.database[:spaces]
     spaces = []
     data.find.each { |item| spaces << JSON.parse(item.to_json) }
     spaces.map { |space|
@@ -40,11 +40,10 @@ class Space
   def self.request(name)
     client = Mongo::Client.new("mongodb+srv://Michael:nomads4life@cluster0.x9n0g.mongodb.net/makers_bnb?retr
       Writes=true&w=majority")
-      collection = client[:spaces]
-      collection.update_one(
-        { name: name },
-        { "$set": { 'available': false } }
-      )
-    end
-
+    collection = client[:spaces]
+    collection.update_one(
+      { name: name },
+      { "$set": { 'available': false } }
+    )
+  end
 end

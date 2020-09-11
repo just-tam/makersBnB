@@ -11,7 +11,7 @@ class Space
 
   attr_reader :name, :description, :price, :start_date, :end_date
 
-  def initialize(name: ,description:,price:, start_date:, end_date:)
+  def initialize(name:, description:, price:, start_date:, end_date:)
     @name = name
     @description = description
     @price = price

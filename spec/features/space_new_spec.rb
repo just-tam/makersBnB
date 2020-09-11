@@ -13,7 +13,5 @@ feature 'adding a new space' do
     expect(page).to have_content('It is a lovely place to stay')
     expect(page).to have_content('£500')
     expect(page).to have_content('12/09/2020')
-
   end
-
 end
