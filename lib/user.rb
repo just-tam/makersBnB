@@ -35,9 +35,14 @@ class User
   def self.find_user(id)
     return nil unless id
     users_data = User.viewusers
+ 
+      #user_data.find( { "_id": ObjectId("#{id}") } )
+      #User.new(id:["_id"]["$oid"], username:["username"]
+
     users_data.each do |user|
       return user if user.id == id
     end
+
   end
 
 end

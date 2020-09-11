@@ -9,7 +9,7 @@ class MakersBnb < Sinatra::Base
   enable :sessions
 
   get '/' do
-    erb :index
+    erb :"users_new"
   end
 
   get '/spaces' do
@@ -30,7 +30,7 @@ class MakersBnb < Sinatra::Base
   end
 
 
-  get '/users/new' do
+  get '/new' do
     erb :"users_new"
   end
 
