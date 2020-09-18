@@ -319,16 +319,12 @@
                                 </div>
                                 <!--/.packages-review-->
                                 <div class="about-btn">
-                                <% if @space[5].available == true%>
+                                
                                     <form action="/spaces/<%= @space[5].name %>" method="post">
                                     <input class="about-view packages-btn" type="submit" id="<% @space[5].name%>" value= "Request" />
                                     </form>
-        
-                                <% else %>
-                                    <form action="/spaces/<%= @space[5].name %>" method="post">
-                                    <input style="background-color: grey !important" class="about-view packages-btn" type="submit" id="<% @space[5].name%>" value= "Not available" />
-                                    </form>
-                                <% end %>
+
+                                
                                 </div>
                                 <!--/.about-btn-->
                             </div>
