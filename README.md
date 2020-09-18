@@ -4,6 +4,13 @@ A web application that allows users to list spaces they have available, and to h
 
 ![Image 1](https://github.com/just-tam/makersBnB/blob/master/Nomads_logo.png?raw=true)
 
+OUR HOMEPAGE
+
+![Homepage](https://github.com/just-tam/makersBnB/blob/master/nomads-home.png?raw=true)
+
+OUR SPACES PAGE
+
+![Spaces](https://github.com/just-tam/makersBnB/blob/master/nomads-spaces.png?raw=true)
 
 
 ## User Stories
